@@ -14,15 +14,16 @@ print()
 
 #Update the last name for Student ID 1007 to De La Ree
 
-result = students.update_one({"student_Id": "1007"}, {"$set": {"last_name": "De La Ree"} })
+result = students.update_one({"student_Id": "1007"}, {"$set": {"last_name": "De la Ree"} })
 
 #Print result of updated student
 
 print("-- DISPLAYING UPDATED STUDENT DOCUMENT FROM find_one() QUERY --")
 
-updated_student = students.find()
-for result in updated_student:
-    print("\nStudent ID: ", result["student_Id"], "\nFirst Name: ", result["first_name"], "\nLast Name: ", result["last_name"])
+updated_student = students.find_one({"student_Id": "1007"})
+print("\nStudent ID: ", updated_student["student_Id"], "\nFirst Name: ", updated_student["first_name"], 
+"\nLast Name: ", updated_student["last_name"])
+    
 print()
 print()
 print("End of program, press any key to continue...")
