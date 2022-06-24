@@ -14,7 +14,7 @@ for doc in docs:
     print("\nStudent ID: ", doc["student_Id"], "\nFirst Name: ", doc["first_name"], "\nLast Name: ", doc["last_name"])
 
 print("\n-- DISPLAYING STUDENT DOCUMENT FROM find_one() QUERY --")
-doc = students.find_one({"student_Id": 1007})
+doc = students.find_one({"student_Id": "1007"})
 print("\nStudent ID: ", doc["student_Id"], "\nFirst Name: ", doc["first_name"], "\nLast Name: ", doc["last_name"])
 
 print("\nEnd of program, press any key to continue...")
