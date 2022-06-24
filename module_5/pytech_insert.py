@@ -9,13 +9,13 @@ client = MongoClient(url)
 students = client.pytech.get_collection("students")
 
 # Inserting documents to database
-wendy = {"student_Id": 1007, 
+wendy = {"student_Id": "1007", 
     "first_name": "Wendy", 
     "last_name": "Rodriguez"}
-lorna = {"student_Id": 1008, 
+lorna = {"student_Id": "1008", 
     "first_name": "Lorna", 
     "last_name": "Doone"}
-tess = {"student_Id": 1009, 
+tess = {"student_Id": "1009", 
     "first_name": "Tess", 
     "last_name": "D'Urbervilles"}
 
