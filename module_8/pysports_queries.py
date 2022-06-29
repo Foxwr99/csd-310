@@ -46,3 +46,5 @@ for player in players:
 
 print()
 print("Press any key to continue...")
+
+db.close()
