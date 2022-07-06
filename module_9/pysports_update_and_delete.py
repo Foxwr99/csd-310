@@ -1,3 +1,7 @@
+'''Wendy Rodriguez
+July 5, 2022
+Module 9.3 Assignment'''
+
 import mysql.connector
 
 # Connect to pysports Database
