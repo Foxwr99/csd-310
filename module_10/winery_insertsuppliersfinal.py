@@ -2,7 +2,7 @@ import mysql.connector
 # Connect to the database
 config = {
     "user" : "winery_user",
-    "password": "birdbox2022!",
+    "password": "wendy1981",
     "host": "127.0.0.1",
     "database": "winery",
     "raise_on_warnings": True
